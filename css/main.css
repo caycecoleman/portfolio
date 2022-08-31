@@ -177,6 +177,7 @@ main p a:hover, nav ul li a:focus {
 
 #about {
   background-color: #cf90d2;
+   width:100%;
 }
 
 footer {
