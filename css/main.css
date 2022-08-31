@@ -15,8 +15,204 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  font-family: 'Lekton', sans-serif;
+  background-color:#E8F0E4;
+  color:#152A3E;
 }
 
+header {
+  background-image: url("night.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #E9B14C;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+nav ul {
+  list-style-type: none;
+  width: 100%;
+}
+
+nav ul li {
+  float: right;
+  margin-right:0.5em;
+  display: block;
+  padding-right: 5em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-size: 1em;
+  text-transform: lowercase;
+  width: 100%;
+  text-align: center;
+  color: #152A3E;
+  background-color: #E9B14C;
+  border-radius: 0.5em;
+}
+
+.content-wrapper {
+ width: 1200px;
+ margin: 0 auto;
+ overflow: auto;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+  background-color: #F8D697;
+  font-weight:bold;
+}
+
+.home-title {
+  padding-top: 17em;
+  padding-bottom: 18em;
+  text-align: center;
+}
+
+.home-title h1 {
+  font-weight: bold;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Lexend Tera', sans-serif;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#work, #about, #skills, #contact {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.portfolio-projects {
+  width: 550px;
+  float: left;
+  margin-right: 2em;
+  text-align: center;
+}
+
+img {
+ width:20em;
+ height:15em;
+}
+
+main p a {
+  text-decoration: none;
+  list-style-type: none;
+  text-transform: lowercase;
+  text-align: center;
+  color: #D4D3E9;
+  background-color: #351D77;
+  border-radius: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-size: 1em;
+}
+
+main p a:hover, nav ul li a:focus {
+  background-color: #D4D3E9;
+  font-weight:bold;
+  color:#351D77;
+}
+
+.skills ul li a {
+  list-style-type: none;
+  width:1200px;
+}
+
+.portfolio-wrapper {
+  text-align: center;
+}
+
+.half-wrapper {
+  float:left;
+  width:550px;
+  padding-left: 20px;
+  padding-right: 20px;  
+}
+
+.half-wrapper ul li {
+  text-align: right;
+  list-style-type: none;
+}
+
+#link-img {
+  width: 2em;
+  height: 2em;
+}
+
+#portfolio-img {
+  width: 22em;
+  height: 35em;
+  border-style: double;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.full-width {
+  width: 1200px;
+  margin: auto;
+  overflow: auto;
+}
+
+.third-width {
+  float: left;
+  width:325px;
+  padding:15px;
+  margin-left:20px;
+  margin-right: 25px;
+}
+
+.third-width ul li {
+  list-style-type: none;
+}
+
+#about {
+  background-color: #cf90d2;
+  width: 1200px;
+}
+
+footer {
+  text-align: center;
+}
+
+#contact .content-wrapper p {
+  float: left;
+}
+
+span {
+  font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 768px) {
+header {
+  width:768px;
+}
+
+#about {
+  width: 768px;
+}
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    width:375px;
+  }
+  
+  #about {
+    width: 375px;
+  }
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
