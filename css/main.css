@@ -34,13 +34,15 @@ header {
 nav ul {
   list-style-type: none;
   width: 100%;
+  text-align: center;
+  margin: auto;
+  padding: 2em 0;
+  overflow: hidden;
 }
 
 nav ul li {
-  float: right;
   margin-right:0.5em;
-  display: block;
-  padding-right: 5em;
+  display: inline-block;
 }
 
 nav ul li a {
@@ -57,9 +59,11 @@ nav ul li a {
 }
 
 .content-wrapper {
- width: 1200px;
- margin: 0 auto;
  overflow: auto;
+ width: 100%;
+ max-width: 1200px;
+ margin: auto;
+ text-align: center;
 }
 
 nav ul li a:hover, nav ul li a:focus {
@@ -89,18 +93,20 @@ h1, h2, h3, h4, h5 {
 #work, #about, #skills, #contact {
   margin-top: 5em;
   margin-bottom: 5em;
+  text-align: center;
 }
 
 .portfolio-projects {
-  width: 550px;
+  width: 100%;
   float: left;
-  margin-right: 2em;
+  margin-right: 1em;
   text-align: center;
 }
 
 img {
- width:20em;
+ width:96%;
  height:15em;
+ margin: auto;
 }
 
 main p a {
@@ -124,7 +130,7 @@ main p a:hover, nav ul li a:focus {
 
 .skills ul li a {
   list-style-type: none;
-  width:1200px;
+  width:100%;
 }
 
 .portfolio-wrapper {
@@ -132,14 +138,12 @@ main p a:hover, nav ul li a:focus {
 }
 
 .half-wrapper {
-  float:left;
-  width:550px;
   padding-left: 20px;
   padding-right: 20px;  
 }
 
 .half-wrapper ul li {
-  text-align: right;
+  text-align: center;
   list-style-type: none;
 }
 
@@ -158,29 +162,45 @@ main p a:hover, nav ul li a:focus {
 }
 
 .full-width {
-  width: 1200px;
+  width: 100%;
   margin: auto;
   overflow: auto;
+  text-align: center;
 }
 
 .third-width {
-  float: left;
-  width:325px;
   padding:15px;
   margin-left:20px;
   margin-right: 25px;
+  text-align: center;
+}
+
+.third-width p a {
+  list-style-type: none;
+}
+.third-width ul {
+margin-right: 2em;
 }
 
 .third-width ul li {
   list-style-type: none;
+  text-align: center;
 }
 
 #about {
   background-color: #cf90d2;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 footer {
   text-align: center;
+}
+
+#email {
+  list-style-type: none;
+  text-decoration: none;
 }
 
 #contact .content-wrapper p {
@@ -191,27 +211,74 @@ span {
   font-weight: bold;
 }
 
+@media only screen and (min-width: 460px) {
+
+  nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .developer-skills-list, .tech-tools-list {
+    padding-right: 2em;
+  }
+
+  img {
+    width:86%;
+    overflow-x: hidden;
+   }
+
+   .half-wrapper ul li {
+    text-align: center;
+    list-style-type: none;
+  }
 
 
-@media screen and (max-width: 768px) {
-header {
-  width:768px;
 }
 
-#about {
-  width: 768px;
-}
+@media only screen and (min-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    width: fit-content;
 }
 
-@media screen and (max-width: 375px) {
-  header {
-    width:375px;
+  .portfolio-projects {
+    margin:auto;
+    display: block;
+    text-align: center;
+    float: left;
+    width:50%;
+    overflow-x: hidden;
+
+}
+
+  #work {
+    float: left;
+    width: 100%;
+  padding: 5px;
+}
+
+  .half-wrapper {
+    width: 30%;
+    margin: auto;
+    display:inline-block;
+    text-align: center;
+    padding-right: 15em;
   }
   
-  #about {
-    width: 375px;
+  .third-width {
+    display:inline-block;
+    text-align:center;
+    width:25%;
+    margin: auto;
   }
+
 }
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
