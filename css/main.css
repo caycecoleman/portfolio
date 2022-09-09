@@ -225,12 +225,26 @@ span {
 
   img {
     width:86%;
-    overflow-x: hidden;
+    overflow: hidden;
    }
+
+   .half-wrapper {
+    width: 30%;
+    margin: auto;
+    display:table-cell;
+    text-align: center;
+    padding-left: 6em;
+    padding-right: 6em;;
+    
+  }
 
    .half-wrapper ul li {
     text-align: center;
     list-style-type: none;
+  }
+
+  .tech-tools-list {
+    padding-bottom: 3em;
   }
 
   nav {
@@ -266,14 +280,6 @@ span {
     width: 100%;
   padding: 5px;
 }
-
-  .half-wrapper {
-    width: 30%;
-    margin: auto;
-    display:inline-block;
-    text-align: center;
-    padding-right: 15em;
-  }
   
   .third-width {
     display:inline-block;
