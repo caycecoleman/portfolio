@@ -151,12 +151,12 @@ main p a:hover, nav ul li a:focus {
   list-style-type: none;
 }
 
-#link-img {
+.link-img {
   width: 2em;
   height: 2em;
 }
 
-#portfolio-img {
+#portfolio-image {
   width: 22em;
   height: 35em;
   border-style: double;
@@ -265,14 +265,20 @@ span {
     width: fit-content;
 }
 
-  .portfolio-projects {
-    margin:auto;
-    display: block;
-    text-align: center;
-    float: left;
-    width:50%;
-    overflow-x: hidden;
+.portfolio-projects {
+  margin:auto;
+  display: block;
+  text-align: center;
+  float: left;
+  width:45%;
+  padding:2%;
+  overflow: hidden;
 
+}
+
+.portfolio-projects p {
+width: 85%;
+margin:auto;
 }
 
   #work {
@@ -447,10 +453,6 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
